@@ -29,10 +29,7 @@ submit1g model/MODEL/test_enumeration9.py --pepochs $(seq -1 49)
 Three different learning algorithms are compared, ADAM (i.e. MODEL=cornet_adam), RMSProp (i.e. MODEL=cornet_rmsprop) and SGD (i.e. MODEL=cornet_sgd).
 In the paper we use cornet_adam as main model. We use cornet_rmsprop and cornet_sgd as controls.
 
-## MATLAB Analysis
-
-*Analysis included in the paper have been done in MATLAB by Percy K. Mistry and can be found in [2021_DNN_1_9](https://github.com/scsnl/percym_2021_DNN_1_9).*
-*Analysis here are focused on the cornet_adam model.*
+## Ablated models
 
 Ablation of selective spontaneous number neurons (SPONs)
 ```bash
@@ -43,8 +40,6 @@ Ablation of selective persistents spontaneous number neurons (P-SPONs)
 ```bash
 submit1g ablation/ablation_selective_pspons_enumeration9.py --pepochs $(seq -1 8) $(seq 9 10 49)
 ```
-
-## Replicated python Analysis
 
 Ablation of all spontaneous number neurons (SPONs)
 ```bash
